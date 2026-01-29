@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            background-color: rgb(157, 111, 231); /* faint pink */
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 40px;
+        }
+
+        /* HOME */
+        #home {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .home-text {
+            max-width: 50%;
+        }
+
+        .home-text h1 {
+            font-size: 40px;
+        }
+
+        .home-text button {
+            padding: 10px 20px;
+            background: rgb(157, 111, 231);
+            border: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* ABOUT */
+        #about {
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        /* SKILLS */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            padding: 8px;
+        }
+
+        /* RESUME */
+        #resume a {
+            padding: 10px 20px;
+            background:#333;
+            color:rgb(157, 111, 231);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* CONTACT */
+        #contact {
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+            background: black;
+            color: rgb(157, 111, 231);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<!-- HOME -->
+<section id="home">
+    <div class="home-text">
+        <h1>Ishvari Patil</h1>
+        <p>I am a beginner web developer learning HTML and CSS.</p>
+        <button onclick="document.getElementById('contact').scrollIntoView()">Hire Me</button>
+    </div>
+
+    <!-- 🔴 PUT YOUR PHOTO FILE NAME HERE -->
+    <img src="my.jpg.jpg" alt="Profile" class="profile-img">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about web development and love building clean UI.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Basic JavaScript</li>
+    </ul>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+    <h2>Resume</h2>
+    <!-- 🔴 PUT YOUR RESUME FILE NAME HERE -->
+    <a href="resume.pdf.pdf" download>Download Resume</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: epatil839@gmail.com</p>
+    <p>Phone: 8999909882</p>
+</section>
+
+<footer>
+    © 2026 Ishvari Patil | Portfolio
+</footer>
+
+</body>
+</html>
